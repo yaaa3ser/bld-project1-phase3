@@ -117,11 +117,11 @@ section {
 ul {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   margin: 0px !important;
   padding: 0px;
   margin-block-start: 0px;
   padding-left: 0px !important;
-  overflow: hidden;
 }
 
 li {
