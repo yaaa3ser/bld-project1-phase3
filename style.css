@@ -1,0 +1,280 @@
+/*nav*/
+nav {
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-top: 5px;
+}
+p {
+  margin-bottom: 0px !important;
+}
+nav div {
+  margin-left: 10px;
+  margin-right: 10px;
+  min-width: fit-content;
+}
+div.search {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+input {
+  border: hidden;
+  outline: none;
+}
+
+nav button {
+  border: hidden;
+  background-color: white;
+}
+.lo {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  padding: 10px 22px;
+  text-align: center;
+}
+.si {
+  /*sign*/
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+}
+.small {
+  display: none;
+}
+
+.hoverblue:hover {
+  cursor: pointer;
+  color: #5624d0;
+}
+
+@media screen and (max-width: 915px) {
+  .small {
+    display: block;
+  }
+
+  .big,
+  div.search {
+    display: none;
+  }
+
+  nav {
+    justify-content: space-between !important;
+  }
+}
+
+/*header*/
+@media (min-width: 915px) {
+  .card {
+    position: relative;
+    border: none !important;
+  }
+
+  .card .card_info {
+    background-color: white;
+    padding: 10px;
+    padding-bottom: 0px;
+    width: 350px;
+    height: 150px;
+    position: absolute;
+    top: 60px;
+    left: 12%;
+    box-shadow: 2px 2px 5px grey;
+  }
+}
+
+@media (max-width: 915px) {
+  .card {
+    padding: 10px;
+    box-shadow: 2px 2px 10px grey;
+  }
+  .card img {
+    margin-left: 0px;
+    height: 300px;
+  }
+  .card .card_info {
+    margin-left: 1%;
+  }
+  .card .card_info p {
+    margin-top: 1%;
+  }
+}
+/*courses section*/
+section {
+  width: 92%;
+  margin: auto;
+  overflow: auto;
+}
+.sectionp {
+  margin-bottom: 10px !important;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  margin: 0px !important;
+  padding: 0px;
+  margin-block-start: 0px;
+  padding-left: 0px !important;
+  overflow: hidden;
+}
+
+li {
+  font-weight: bold;
+  margin-right: 12px;
+  color: #6a6f73;
+  min-width: fit-content;
+}
+
+li:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.card2 {
+  border: 1px solid gray;
+  border-bottom: 1px solid gray !important;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+.expand {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.explore {
+  width: 80px;
+  height: 40px;
+  padding: 10px;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  font-weight: bold;
+}
+
+.explore:hover {
+  cursor: pointer;
+  background-color: aliceblue;
+}
+
+.courses {
+  width: fit-content;
+  margin-top: 15px;
+  display: flex;
+  margin-right: 0px;
+}
+
+.photo {
+  width: 240px;
+  height: 135px;
+  border: 1px solid gainsboro;
+}
+
+.myCourse {
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+  justify-content: space-between;
+  width: 240px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.hd {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  font-size: 1rem;
+  font-weight: bold;
+  max-width: 85%;
+}
+
+.author {
+  font-size: 12px;
+  color: gray;
+  margin: 5px 0px;
+  flex: 1;
+}
+.rate {
+  font-size: 13px;
+  color: goldenrod;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.price {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  height: 100%;
+  font-size: 18px;
+  background: #fff;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  top: 45% !important;
+  color: white !important;
+  border-radius: 50% !important;
+  background-color: black !important;
+  width: 45px !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 20px !important;
+}
+
+.swiper-button-next {
+  right: 0px !important;
+}
+
+.swiper-button-prev {
+  left: 0px !important;
+}
+/*=============categories===================*/
+
+.categories {
+  width: 94%;
+  margin: 2% 4% 1% !important;
+}
+.categories h2 {
+  margin: 2% 0% 3% !important;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.02rem;
+  font-size: 1.5rem;
+}
+.col .card {
+  max-width: 320px;
+  margin: auto;
+}
+
+@media (max-width: 550px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 58% !important;
+  }
+  .photo {
+    width: 460px;
+    height: 200px;
+  }
+}
+@media (min-width: 550px) and (max-width: 626px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 55% !important;
+  }
+}
